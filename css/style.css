@@ -1,0 +1,1647 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --h2-main-color: #334e68;
+    --h2-light-color: #2186eb;
+}
+
+body, html {
+    font-family: 'Roboto' , sans-serif;
+    margin: 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.flex-container {
+    display: flex;
+}
+
+h2 {
+    font-size: 48px;
+	color: var(--h2-main-color);	
+	font-weight: 500;
+    text-align: center;
+}
+
+h2 > span {
+    color: var(--h2-light-color);
+} 
+
+/*------------ HEADER ------------*/
+
+header .container {
+    justify-content: space-between;
+}
+
+.background-hero {
+    position: absolute;
+    background: linear-gradient(135deg, #2491ea, #38dee2);
+    height: 1100px;
+    width: 100%;
+    z-index: -1;
+}
+
+header .navbar {
+    max-width: 270px;  
+}
+
+header .navbar-for-mobile {
+    display: none;
+}
+
+header a.icon {
+    display: none;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    position:fixed;
+    left: 50%;
+    top: 20px;
+    margin-left: -40px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px #b3c9df;
+    z-index: 50;
+}
+
+header .navbar ul, header .login ul {
+    Font-size: 16px;
+	font-weight: 700;
+    list-style: none;
+    justify-content: space-between;
+    width: 270px;
+    padding: 18px 10px;
+}
+
+header .navbar a, header .login a {
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+header .signupBtn {
+    padding: 15px 50px; 
+    border: 1px solid white;
+    border-radius: 25px;
+ }
+
+header .signupBtn:hover {
+    background-color: #32c4ef;
+    text-decoration: none;
+}
+
+header .logout {
+    background-color: transparent;
+    color: #fff;
+    padding: 15px 50px; 
+    border: 1px solid white;
+    border-radius: 25px;
+    Font-size: 16px;
+	font-weight: 700;
+}
+
+header .logout:hover {
+    cursor: pointer;
+    background-color: #32c4ef;
+}
+
+/*------------ END OF HEADER ------------*/
+
+
+/*------------ HERO ------------*/
+
+.hero .flex-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 66px;
+    color: white;
+    font-weight: 500;
+    text-transform: capitalize;
+    width: 600px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 65px;
+}
+
+.hero img {
+    max-width: 380px;
+    max-height: 650px;  
+}
+
+.hero .watch-login-signup {
+    max-width: 380px;
+    max-height: 650px;
+    position: relative;
+}
+
+/*------------ HERO WATCH SCREEN FOR LOGIN AND SIGNUP ------------*/
+
+.hero .watch-screen-background,
+.hero .logged-in-screen {
+    background-color: white;
+    position: absolute;
+    top: 150px;
+    bottom: 152px;
+    left: 11%;
+    right: 15.5%;
+    border-radius: 50px;
+}
+
+/*------------ HERO WATCH SCREEN FOR SIGNUP ------------*/
+
+.hero .watch-signup form {
+    top: 0;
+    left: 12.407%;
+    gap: 25px;
+}
+
+.hero .watch-signup form h2 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.hero .watch-login-signup input {
+    height: 30px;
+    border-radius: 15px;
+    text-align: center;
+    outline: none;
+    border: solid 2px #2186eb;
+}
+
+.hero .watch-login-signup .submit-login-signup {
+    background-color: #2186eb;
+    color: white;
+}
+
+.hero .watch-login-signup .submit-login-signup:hover {
+    cursor: pointer;
+    background-color: #59a7f5;
+    border: none;
+
+}
+
+/*------------ HERO WATCH SCREEN FOR LOGIN ------------*/
+
+.hero .watch-login-signup .watch-login form {
+    gap: 25px;
+}
+
+/*------------ HERO WATCH WHEN USER IS LOGGED IN ------------*/
+
+
+.hero .logged-in-screen {
+    text-align: center;
+}
+
+.hero .logged-in-screen h3 {
+    color: var(--h2-light-color);
+    font-size: 2.5rem;
+    margin-bottom: 70px;
+}
+
+.hero .logged-in-screen p {
+    font-size: 2rem;
+    color: #334e68;
+}
+
+.hero .logged-in-screen p span{
+    color: var(--h2-light-color);
+}
+
+
+/*------------ END OF HERO ------------*/
+
+/*------------ HOW TO INSTALL ------------*/
+
+.how-to-install .flex-container {
+    justify-content: space-between;
+    padding: 70px 10px;
+    margin-top: 100px;
+}
+
+.how-to-install h3 {
+    font-size: 24px;
+	color:#334e68;
+	font-weight: 700;
+	line-height: 24px;
+}
+
+.container .number-1,
+.container .number-2,
+.container .number-3 {
+    position: absolute;
+    top: 1110px;
+    padding-left: 20px;
+    font-size: 205px;
+    color: #d9e2ec;
+    font-weight: 500;
+    z-index: -1;
+    opacity: 50%;
+}
+
+.how-to-install .container div {
+    max-width: 380px;
+    height: 330px;
+    padding-top: 85px;
+    padding-left: 40px;
+}
+
+.how-to-install div p {
+    font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	color: #627d98;
+    width: 300px;
+}
+
+.how-to-install div span{
+    color: var(--h2-light-color);
+}
+
+.how-to-install img {
+    filter: invert(45%) sepia(66%) saturate(3908%) hue-rotate(193deg) brightness(98%) contrast(88%);
+}
+
+.how-to-install .select:hover {
+    box-shadow: 1px 2px 20px 6px #eff1f2;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/*------------ END OF HOW TO INSTALL ------------*/
+
+/*------------ HOW IT WORKS ------------*/
+
+.how-it-works .flex-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.how-it-works p {
+    max-width: 670px;
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #627d98;
+}
+
+.how-it-works iframe {
+    width: 970px;
+    height: 550px;
+}
+
+/* Disabling video image styles, replacing them with youtube video
+
+.how-it-works .video {
+    background: #2186eb;
+    position: absolute;
+    top: 1905px;
+    opacity: 80%;
+    box-shadow: 2px 2px 15px 5px #78b5f3;
+}
+
+.how-it-works .play-button {
+    width: 150px;
+    height: 350px;
+    padding-top: 200px;
+}
+
+.how-it-works .video, .how-it-works img {
+    width: 970px;
+    height: 560px;
+    border-radius: 10px;    
+}
+*/
+
+/*------------ END OF HOW IT WORKS ------------*/
+
+/*------------ WHY PEOPLE LOVES US ------------*/
+
+.why-people h2 {
+    margin-top: 180px;
+    margin-bottom: 50px;
+}
+
+.person-qoute.flex-container {
+    justify-content: space-between;
+}
+
+.why-people .fa-quote-left {
+    font-size: 3em;
+    padding-left: 80px;
+    color: var(--h2-light-color);
+}
+
+.why-people .qoute {
+    padding-top: 100px;
+}
+
+.why-people .qoute p {
+    Font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #627d98;
+	font-style: italic;
+	width: 490px;
+	height: 125px;
+    padding-left: 25px;
+}
+
+.apear {
+    opacity: block;
+}
+
+.hide {
+    display: none;
+}
+
+.why-people .under-qoute.flex-container {
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+.why-people .under-qoute .name-title {
+    padding-left: 150px;
+}
+
+.why-people .under-qoute .arrows {
+    align-self: center;
+}
+
+.nextBtn, .previousBtn {
+    border: none;
+    background: none;
+    font-size: 1.5em;
+}
+
+.nextBtn:hover, .previousBtn:hover {
+    cursor: pointer;
+}
+
+.why-people .arrows {
+    padding: 0 10% 0 78%;
+    display: block;
+}
+
+.arrowBlue {
+    color: var(--h2-light-color);
+}
+
+.arrowGray {
+    color: #d9e2ec;
+}
+
+/*------------ END OF WHY PEOPLE LOVES US ------------*/
+
+/*------------ HOW IT LOOKS ------------*/
+
+.how-it-looks .container-phones {
+    max-width: 1550px;
+    margin: 0 auto;
+}
+
+.how-it-looks h2 {
+    text-align: center;
+    margin-top: 160px;
+    margin-bottom: 100px;
+}
+
+.how-it-looks .phones {
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.how-it-looks .phones .faded {
+    filter: opacity(60%);
+    box-shadow: 1px 1px 10px 5px #eaedf0;
+    border-radius: 10px;
+}
+
+.how-it-looks .phones .faded:hover {
+    filter: saturate(100%);
+    transform: scale(1.3);
+    z-index: 3;
+}
+
+.how-it-looks .dot-buttons {
+    display: none;
+}
+
+.how-it-looks .dot-buttons .gray {
+    background-color: #b8c8d8;
+}
+
+.how-it-looks .dot-buttons .blue {
+    background-color: #2083e6;
+}
+
+.how-it-looks .slideshow-container {
+    display: none;
+}
+
+.how-it-looks .dots-under-photos {
+    text-align: center;
+    display: none;
+}
+
+/*------------ END OF HOW IT LOOKS ------------*/
+
+/*------------ FAQ ------------*/
+
+.FAQ .questions-and-watch img {
+    max-width: 330px;
+    max-height: 540px;
+    padding-right: 20px;
+}
+
+.FAQ h2 {
+    margin-bottom: 75px;
+}
+
+.FAQ .flex-container {
+    justify-content: space-between;
+}
+
+button.accordion {
+    width: 670px;
+    height: 80px;
+    font-size: 18px;
+    color: #627d98;	
+    font-weight: 700;	
+    line-height: 25px;
+    text-align: left;
+    padding-left: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 3px 20px 2px #eaedf0;
+    border: none;
+    margin-bottom: 25px;
+}
+
+.FAQ button::after {
+    content: '\02335';
+    float: right;
+    margin-right: 20px;
+    font-size: 25px;
+    transform: rotate(-90deg);
+}
+
+.FAQ button.active::after {
+    transform: rotate(0);
+    color: #2186eb;
+}
+
+.FAQ button.active {
+    color: #2186eb;
+}
+
+
+button.accordion:hover {
+    color: #2186eb;
+}
+
+.FAQ .panel {
+    background-color: #fff;
+    width: 500px;
+    padding: 0 15px;
+    margin-top: -20px;
+    padding-bottom: 30px;
+    display: none;
+}
+
+/*------------ END OF FAQ ------------*/
+
+/*------------ DOWNLOAD THE FUTURE ------------*/
+
+.download {
+    overflow: hidden;
+    margin-top: 150px ;
+    background-color: #2186eb;
+}
+
+.download .left-phoneBG {
+    width: 50%;
+    height: 1px;
+    position: relative;
+}
+
+.download .right-phoneBG {
+    width: 50%;
+    height: 1px;
+    position: relative;
+}
+
+.download .left {
+    position: absolute;
+    right: 300px;
+    top: -400px;
+}
+
+.download .right {
+    position: absolute;
+    left: 300px;
+    bottom: -850px;    
+}
+
+.download img {
+    position:fixed;
+    
+}
+
+.download h2 {
+    padding-top: 85px;
+    color: white;
+    margin: 0;
+}
+
+.download p {
+    font-size: 16px;
+	letter-spacing:0px;
+	line-height: 24px;
+	color: #fff;
+	font-weight: 400;
+    text-align: center;
+    max-width: 540px;
+    margin: 20px auto;
+}
+
+.download form {
+    max-width: 510px;  
+    margin: 15px auto;
+}
+
+.download .item1 {
+    padding-left: 50px;
+    border: none;
+    height: 55px;
+    border-radius: 25px;
+    width: 510px;
+    outline: none;
+}
+.download ::placeholder {
+    font-size: 18px;
+    line-height: 22px;
+    color: #2186eb;
+    font-weight: 400;
+}
+
+.download .fa-paper-plane {
+    position: absolute;
+    display: block;
+    transform: translate(10px, 15px);
+    font-size: 1.5rem;
+    color: #2186eb;
+}
+
+.download .item2 {
+    border: none;
+    margin-top: 3px;
+    margin-left: -183px;
+    width: 180px;
+    height: 49px;
+    border-radius: 25px;
+    cursor: pointer;
+    background: #2186eb;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.download .item2:hover {
+    background-color: #59a7f5;
+}
+
+.download .logos {
+    justify-content: center;
+    color: #fff;
+    font-size: 2em;
+    padding-top: 50px;
+    padding-bottom: 65px;
+}
+
+.download .logos i {
+    padding-left: 25px;
+}
+
+.download .fab.fa-apple {
+    padding: 0;
+}
+
+/* ------------END OF DOWNLOAD THE FUTURE ------------*/
+
+/*------------ PRICING PLANS ------------*/
+
+.pricing-plans .texts p {
+    font-size: 18px;
+	line-height: 24px;
+	color: #627d98;
+	font-weight: 400;
+    text-align: center;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.pricing-plans .texts {
+    margin: 185px 0 45px 0;
+}
+
+.pricing-plans .flex-container {
+    justify-content: center;
+    gap: 25px;
+}
+
+.pricing-plans .prices > div {
+    box-shadow: 2px 2px 20px 10px #f5f6f8;
+    width: 310px;
+    border-radius: 15px;
+}
+
+.pricing-plans .card-tag {
+    font-size: 14px;
+	letter-spacing: 0px;
+	line-height: 31px;
+	color: #2186eb;
+	font-weight: 700;
+	background-color: #e6f6ff;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 50px auto;
+    max-width: 140px;
+    border-radius: 15px;
+}
+
+.pricing-plans .price {
+    font-size: 48px;
+	line-height: 62px;
+	color:#2186eb;
+	font-weight: 900;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.pricing-plans .monthly, .pricing-plans .info {
+    font-size: 14px;
+	line-height: 21px;
+	color:  #829ab1;;
+	font-weight: 400;
+    text-align: center;
+    margin: 0;
+        
+}
+
+.pricing-plans .info {
+    margin: 35px auto;
+    padding-bottom: 35px;
+    max-width: 215px;
+    border-bottom: 1px solid #0967d2;
+}
+
+.pricing-plans .numbers {
+    max-width: 180px;
+    margin: 70px auto 40px;
+    text-align: center;
+}
+
+.pricing-plans input {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: white;
+    border-color: #2186eb;
+    margin-bottom: 45px;
+    font-size: 18px;
+	color: #2186eb;
+	font-weight: 700;
+    cursor: pointer;
+}
+
+.pricing-plans input:hover {
+    color: white;
+    background-color: #2186eb;
+}
+
+.pricing-plans .professional input:hover {
+    background-color: #59a7f5;
+}
+
+.pricing-plans .professional {
+    background-color: #2083e6;
+}
+
+.pricing-plans .professional p {
+    color: #fff;
+}
+
+.pricing-plans .professional .card-tag {
+    color: #2186eb;
+}
+
+.pricing-plans .professional input {
+    border: none;
+}
+
+/*------------ END OF PRICING PLANS ------------*/
+
+/*------------ LATEST POSTS ------------*/
+
+.latest-posts h2 {
+    margin-top: 190px;
+    margin-bottom: 100px;
+}
+
+.latest-posts .posts .post {
+    width: 370px;
+    box-shadow: 0px 0px 20px 10px #f5f6f8;
+    border-radius: 15px;
+}
+
+.latest-posts .posts {
+    justify-content: center;
+    gap: 30px;
+}
+
+.latest-posts .posts .date {
+    font-size: 17px;
+	line-height: 24px;
+	color: #829ab1;
+	font-weight: 400;
+	font-style: italic;
+    margin-top: 40px;
+    margin-left: 25px;
+}
+
+.latest-posts .posts h4 {
+    font-size: 18px;
+	line-height: 31px;
+	color:#334e68;
+	font-weight: 700;
+    margin-right: 70px;
+    margin-left: 25px;
+}
+
+.latest-posts .posts .texts {
+    font-size: 16px;
+	line-height: 24px;
+	color: #627d98;
+	font-weight: 400;
+    margin-left: 25px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+}
+
+.latest-posts input {
+    font-size: 14px;
+	font-weight: 500;
+	color: #fff;
+    background-color: #2186eb;
+    width: 180px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    display: block;
+    margin: 50px auto;
+    cursor: pointer;
+}
+
+.latest-posts input:hover {
+    background-color: #59a7f5;
+    color: #fff;
+}
+
+.latest-posts .posts .highlighted h4 {
+    color: #2186eb;
+}
+
+/*------------ END OF LATEST POSTS ------------*/
+
+/* ------------CONTACT US ------------*/
+
+.contact-us h2 {
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+.contact-us p {
+    font-size: 24px;
+	line-height: 31px;
+	color: #627d98;
+	font-weight: 400;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.contact-us .item1, .contact-us .item2 {
+    width: 280px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #fff;
+    font-size: 16px;
+	line-height: 17px;
+	color: var(--h2-light-color);
+	font-weight: 700;
+    border-color: #2186eb;
+    border: 2px solid #2186eb;
+    outline: none;
+}
+
+.contact-us .item1 {
+    padding-left: 60px;
+}
+
+.contact-us .fa-paper-plane {
+    position: absolute;
+    transform: translate(-370px, 10px);
+    font-size: 1.5rem;
+    color: #2186eb;
+}
+
+.contact-us .item2 {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.contact-us ::placeholder {
+    color: var(--h2-light-color);
+}
+
+.contact-us .item3 {
+    width: 180px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #2186eb;
+    font-size: 16px;
+	line-height: 17px;
+	color: #fff;
+	font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+}
+
+.contact-us .item3:hover {
+    background-color: #59a7f5;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact-us .contact-form {
+    justify-content: center;
+    gap: 25px;
+}
+
+.contact-us .contacts {
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.contact-us .contacts a {
+    text-decoration: none;
+    font-size: 16px;
+	line-height: 24px;
+	color: var(--h2-light-color);
+	font-weight: 700;
+}
+
+.contact-us .contacts a:hover {
+    text-decoration: underline;
+}
+
+.contact-us ul {
+    padding-left: 0;
+}
+
+.contact-us .contacts li {
+    list-style: none;
+}
+
+.contact-us .contacts i {
+    padding-right: 15px;
+    color: var(--h2-light-color);
+    font-size: 1.2rem;
+}
+
+.contact-us .mapBG {
+    background: url(../images/mapppBG.png) no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 30vh;
+    filter: contrast(40%);
+}
+
+/*------------ END OF CONTACT US ------------*/
+
+/*------------ FOOTER ------------*/
+
+.footer {
+    background: #0967d2;
+}
+
+.footer .navbar {
+    list-style: none;
+}
+
+.footer .navbar a {
+    font-size: 14px;
+    color: #e6f6ff;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 30px;
+}
+
+.footer .navbar a:hover {
+    text-decoration: underline;
+}
+
+.footer .navigation {
+    justify-content: space-between;
+    padding: 15px 15px;
+}
+
+.footer .app-stores img:last-child {
+    padding-left: 10px;
+}
+
+.footer .social {
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 45px;
+}
+
+.footer .copyrights {
+    font-size: 14px;
+    line-height: 17px;
+    color: #e6f6ff;
+    font-weight: 400;
+}
+
+.footer .socials i {
+    margin-left: 20px;
+    color: white;
+}
+
+.footer .socials i:hover {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+/*------------------------ RESPONSIVE DESIGN PART ------------------------*/
+
+@media (max-width: 1600px) {
+    .how-it-looks img {
+        width: 200px;
+    }
+
+    .how-it-looks .phones {
+        justify-content: center;
+        gap: 25px;
+    }
+}
+
+/*------------ FOR SMALLER DESKTOP SCREENS ------------*/
+
+@media (max-width: 1200px) {
+    .exploded {
+        display: none;
+    }
+
+    .how-it-looks .slideshow-container {
+        display: block;
+    }
+
+    .container {
+        width: 810px;
+    }
+
+    .how-to-install .flex-container {
+        justify-content: center;
+    }
+
+    .how-it-looks .dots-under-photos {
+        display: block;
+    }
+
+    .why-people .qouter {
+        padding-top: 80px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .why-people .arrows {
+        padding: 0 0 0 740px;
+    }
+
+    .FAQ img {
+        transform: scale(0.8);
+        padding-bottom: 180px;
+    }
+}
+
+/*------------ FOR SMALLER TABLETS, OR LANDSCAPED PHONES ------------*/
+
+@media (max-width: 950px) {
+
+    /*------------ SETTING CONTAINER SIZE ------------*/
+    .container {
+        max-width: 768px;
+    }
+
+    .container h2 {
+        margin-top: 100px;
+    }
+
+    /*------------ WATCH SCREEN LOGIN ADJUST ------------*/
+
+    .hero .watch-login-signup .watch-login h2 {
+        margin-top: 40px;
+    }
+
+    .hero .logged-in-screen h2 {
+        margin-top: 40px;
+    }
+
+    /*------------ HOW TO INSTALL ------------*/
+
+    .how-to-install .container > div {
+        width: 250px;
+        height: 250px;
+    }
+
+    .how-to-install .container {
+        gap: 30px;
+    }
+
+    .how-to-install .install-text {
+        display: none;
+    }
+
+    /*------------ HOW IT WORKS ------------*/
+
+    .how-it-works h2 {
+        margin-top: 0;
+    }
+
+    .how-it-works iframe {
+        width: 600px;
+        height: 400px;
+    }
+
+    /*------------ WHY PEOPLE LOVE US ------------*/
+
+    .why-people .fa-quote-left {
+        padding-left: 20px;
+    }
+
+    .why-people .person-qoute p {
+        width: 450px;
+        padding-right: 10px;
+    }
+
+    .why-people .qouter {
+        padding-left: 20px;
+    }
+
+    .why-people .arrows {
+        padding-left: 650px;
+    }
+
+    /*------------ HOW IT LOOKS ------------*/
+
+    .how-it-looks h2 {
+        margin-top: 60px;
+    }
+
+    .how-it-looks .dots-under-photos {
+        display: block;
+    }
+
+    /*------------ FAQ ------------*/
+
+    .FAQ button.accordion {
+        width: 450px;
+        margin-left: 25px;
+    }
+    /*------------ DOWNLOAD THE FUTURE ------------*/
+
+    .download h2,
+    .download {
+        margin-top: 0;
+    }
+
+    .download .phonesBG {
+        display: none;
+    }
+
+    /*------------ PRICING PLANS ------------*/
+
+    .pricing-plans .texts {
+        margin-top: 100px;
+    }
+
+    .pricing-plans .info {
+        display: none;
+    }
+
+    .pricing-plans .prices .starter,
+    .pricing-plans .prices .professional,
+    .pricing-plans .prices .advanced {
+        width: 220px;
+        gap: 10px;
+    }
+
+    .pricing-plans .card-tag {
+        margin-bottom: 0;
+    }
+
+    .pricing-plans .numbers {
+        margin-top: 40px;
+    }
+
+    .pricing-plans .prices input {
+        width: 150px;
+    }
+
+    /*------------ LATEST POSTS ------------*/
+
+    .latest-posts h2 {
+        margin-bottom: 50px;
+    }
+
+    .latest-posts .desktop {
+        display: none;
+    }
+
+    .latest-posts .container .post {
+        width: 350px;
+    }
+
+    /*------------ CONTACT US ------------*/
+
+    .contact-us h2 {
+        margin-bottom: 30px;
+    }
+
+    .contact-us p {
+        margin-bottom: 50px;
+    }
+
+    .contact-us .item1,
+    .contact-us .item2 {
+        width: 250px;
+    }
+
+    .contact-us .item3 {
+        width: 130px;
+    }
+
+    .contact-us .fa-paper-plane {
+        padding-left: 120px;
+    }
+
+    .contact-us ul {
+        padding-left: 0;
+    }
+
+    .contact-us .mapBG {
+        height: 20vh;
+    }
+
+    /*------------ FOOTER ------------*/
+
+    .footer img {
+        width: 120px;
+    }
+
+    .footer .navigation a {
+        padding: 15px;
+    }
+}  
+
+/*------------ MOBILE ------------*/
+
+@media (max-width: 760px) {
+
+    .container {
+        max-width: 375px
+    }
+
+    html h2 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        margin-bottom: 20px;
+        padding: 0 20px;
+        font-size: 0.75rem;
+    }
+
+    /*------------ HEADER ------------*/
+
+    .logo {
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+        margin-left: -30px;
+    }
+
+    header .login, header .navbar {
+        display: none;
+    }
+
+    #burger {
+        display: none;
+        background-color: #59a7f5;
+        padding: 10px 0;
+        margin-left: 10px;
+        border-radius: 5px;
+    }
+
+    #burger a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        display: block;
+        padding: 10px 16px;
+    }
+
+    #burger a:hover {
+        text-decoration: underline;
+    }
+
+    header .navbar-for-mobile {
+        display: block;
+        overflow: hidden;
+        position: absolute;
+    }
+
+    header a.icon {
+        display: inline-block;
+        
+    }
+
+    header .fa-bars {
+        font-size: 2.5rem;
+        color: #fff;
+        margin: 15px 15px;
+    }
+
+    header .logoutMob {
+        border: none;
+        background-color: transparent;
+        color: #fff;
+        font-weight: 600;
+        display: block;
+        padding: 10px 16px;
+    }
+
+    header .logoutMob:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    /*------------ HERO ------------*/
+
+    .background-hero {
+        max-height: 800px;
+    }
+
+    .hero h1 {
+        margin-top: 50px;
+        font-size: 2rem;
+        width: 260px;
+    }
+    .hero img {
+        width: 300px;
+    }
+
+    /*------------ HERO WATCH SCREEN ------------*/
+
+    .hero .container .watch-login form h2,
+    .hero .logged-in-screen h2 {
+        margin-top: 20px;
+    }
+
+    .hero .watch-signup form {
+        gap: 15px;
+    }
+
+    .hero .container .watch-screen-background,
+    .hero .logged-in-screen {
+        top: 118px;
+        bottom: 121px;
+        border-radius: 38px;
+    }
+
+    .hero .logged-in-screen p {
+        font-size: 1.6rem;
+    }
+
+    .hero .logged-in-screen h3 {
+        margin-bottom: 50px;
+    }
+
+    /*------------ HOW TO INSTALL ------------*/
+
+    .how-to-install .container {
+        margin-top: 0;
+        padding-top: 50px;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 30px;
+        flex-wrap: wrap;
+    }
+
+    .how-to-install .container > div {
+        width: 150px;
+    }
+
+    .how-to-install .number-1 {
+        top: 770px;
+        font-size: 160px;
+    }
+
+    .how-to-install .number-2 {
+        top: 770px;
+        font-size: 160px;
+    }
+
+    .how-to-install .number-3 {
+        font-size: 160px;
+        top: 1040px;
+    }
+
+    /*------------ HOT IT WORKS ------------*/
+
+    .how-it-works h2 {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .how-it-works p {
+        margin-bottom: 30px;
+    }
+
+    .how-it-works .text-for-desktop {
+        display: none;
+    }
+
+    .how-it-works iframe {
+        width: 350px;
+        height: 200px;
+    }
+
+    /*------------ WHY PEOPLE LOVES US ------------*/
+
+    .why-people h2 {
+        margin-top: 50px;
+    }
+
+    .why-people .flex-container {
+        flex-wrap: wrap;
+    }
+
+    .why-people .qouter {
+        padding: 0;
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+    }
+
+    .why-people .fa-quote-left {
+        font-size: 30px;
+    }
+
+    .why-people .qoute {
+        padding-top: 20px;        
+    }
+
+    .why-people .person-qoute {
+        width: 350px;
+        height: 200px;
+    }
+
+    .why-people .qoute p {
+        font-size: 0.75rem;
+    }
+
+    .why-people .person-qoute .name-title p {
+        font-size: 0.7rem;
+    }
+
+    .why-people .person-qoute .name-title {
+        padding-left: 30px;
+    }
+
+    .why-people .arrows {
+        padding-left: 250px;
+    }
+
+    /*------------ HOW IT LOOKS ------------*/
+
+    .how-it-looks h2 {
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    .how-it-looks .dots-under-photos {
+        display: block;
+    }
+
+    /*------------ FAQ ------------*/
+
+    .FAQ h2 {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .FAQ .questions-and-watch p {
+        font-size: 0.75rem;
+    }
+
+    .FAQ .accordion {
+        font-size: 0.875rem;
+    }
+
+    .FAQ img {
+        display: none;
+    }
+
+    .FAQ button.accordion {
+        width: 340px;
+        height: 50px;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .FAQ .panel p {
+        width: 250px;
+        margin-left: 25px;
+    }
+
+    /*------------ DOWNLOAD THE FUTURE ------------*/
+
+    .download .container {
+        margin-top: 50px;
+    }
+
+    .download h2 {
+        padding-top: 50px;
+    }
+
+    .download .container form {
+        width: 370px;
+    }
+
+    .download .item1 {
+        width: 300px;
+        margin-top: 50px;
+        margin-left: 35px;
+    }
+
+    .download .item2 {
+        width: 100px;
+        margin: 0;
+        margin-top: 52.5px;
+        margin-left: -102.5px;
+        font-size: 0.875rem;
+    }
+
+    .download .fa-paper-plane {
+        padding: 0;
+        transform: translate(45px, 60px);
+    }
+
+    .download .logos {
+        padding-top: 20px;
+        padding-bottom: 40px;
+        font-size: 20px;
+    }
+
+    .download .fab.fa-apple {
+        padding: 0;
+    }
+
+    .download .phonesBG {
+        display: none;
+    }
+
+    /*------------ PRICING PLANS ------------*/
+
+    .pricing-plans .texts h2,
+    .pricing-plans .texts {
+        margin-top: 50px;
+    }
+    
+    .pricing-plans .prices {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-plans .card-tag {
+        margin-top: 5px;
+    }
+    
+    .pricing-plans .price {
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    .pricing-plans .numbers p{
+        font-size: 0.75rem;
+        margin: 8px 20px;
+    }
+
+    .pricing-plans .numbers {
+        margin: 20px auto;
+    }
+
+    .pricing-plans .prices input {
+        font-size: 0.875rem;
+        width: 100px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    /*------------ LATEST POSTS ------------*/
+
+    .latest-posts h2 {
+        margin-top: 80px;
+    }
+
+    .latest-posts .post.post-no-mobile {
+        display: none;
+    }
+
+    /*------------ CONTACT US ------------*/
+
+    .contact-us h2 {
+        margin-top: 80px;
+    }
+
+    .contact-us .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-us .contacts {
+        gap: 5px;
+    }
+
+    .contact-us .contacts a,
+    .contact-us .contacts i {
+        font-size: 00.75rem;
+    }
+
+    .contact-us .mapBG {
+        height: 15vh;
+    }
+
+    .contact-us .fa-paper-plane {
+        padding: 0;
+        transform: translate(-100px, -75px);
+    }
+
+    /*------------ FOOTER ------------*/
+
+    .footer .app-stores img {
+        width: 70px;
+    }
+
+    .footer .app-stores a {
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    .footer .app-stores {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .navbar {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-left: 60px;
+    }
+
+    .footer .socials i {
+        margin-bottom: 0;
+    }
+}
